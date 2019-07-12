@@ -6,7 +6,7 @@ A few examples how to execute common commands in docker-compose:
     - Execute _php artisan_ commands `docker-compose exec app php artisan ...`
 3. Create database, run migrations and seed database with data.
 4. Add the following Entities with relations and migrations:
-    - Order `[id, date, orderItems, shop, client]`
+    - Order `[id, date, orderItems, buyer]`
     - OrderItem `[id, order, product, quantity, price, discount (%), sum (price x discount x quantity)]`
     - Buyer `[id, name, surname, country, city, addressLine, phone, orders]`
     
